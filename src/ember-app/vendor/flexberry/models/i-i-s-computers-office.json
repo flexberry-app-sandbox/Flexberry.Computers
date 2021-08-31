@@ -1,0 +1,75 @@
+﻿{
+  "name": "IISComputersOffice",
+  "modelName": "i-i-s-computers-office",
+  "className": "Office",
+  "nameSpace": "IIS.Computers",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "address",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "floor",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "OfficeE",
+      "modelName": "i-i-s-computers-office",
+      "attrs": [
+        {
+          "name": "address",
+          "caption": "Address",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "floor",
+          "caption": "Floor",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "OfficeL",
+      "modelName": "i-i-s-computers-office",
+      "attrs": [
+        {
+          "name": "address",
+          "caption": "Address",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "floor",
+          "caption": "Floor",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

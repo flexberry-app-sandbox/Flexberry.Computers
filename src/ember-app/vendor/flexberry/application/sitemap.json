@@ -1,0 +1,43 @@
+﻿{
+  "applicationCaption": "Computers",
+  "applicationTitle": "Computers",
+  "items": [
+    {
+      "link": null,
+      "menuName": "computers",
+      "caption": "Computers",
+      "title": "Computers",
+      "children": [
+        {
+          "link": "i-i-s-computers-office-l",
+          "menuName": null,
+          "caption": "Office",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-computers-person-l",
+          "menuName": null,
+          "caption": "Persons",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-computers-computer-l",
+          "menuName": null,
+          "caption": "Computers",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-computers-computer-part-type-l",
+          "menuName": null,
+          "caption": "Computer part types",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

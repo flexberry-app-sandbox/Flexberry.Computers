@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Person",
+  "name": "IISComputersPersonE",
+  "className": "PersonE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-computers-person",
+      "modelProjection": "PersonE"
+    }
+  ]
+}

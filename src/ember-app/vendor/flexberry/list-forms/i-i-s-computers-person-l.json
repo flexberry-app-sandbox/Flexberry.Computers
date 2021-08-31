@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-computers-person-e",
+  "editForm": "i-i-s-computers-person-e",
+  "external": false,
+  "caption": "Person",
+  "name": "IISComputersPersonL",
+  "className": "PersonL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-computers-person",
+      "modelProjection": "PersonL"
+    }
+  ]
+}

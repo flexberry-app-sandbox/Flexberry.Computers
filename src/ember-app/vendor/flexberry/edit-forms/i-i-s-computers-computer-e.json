@@ -1,0 +1,39 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Office",
+      "projection": "OfficeL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Owner",
+      "projection": "PersonL",
+      "detailModelName": null
+    },
+    {
+      "master": "computerPartType",
+      "displayAttributeName": "name",
+      "required": true,
+      "relationName": "Parts.ComputerPartType",
+      "projection": "ComputerPartTypeL",
+      "detailModelName": "i-i-s-computers-computer-part"
+    }
+  ],
+  "external": false,
+  "caption": "Computer",
+  "name": "IISComputersComputerE",
+  "className": "ComputerE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-computers-computer",
+      "modelProjection": "ComputerE"
+    }
+  ]
+}

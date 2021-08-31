@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Computer part type",
+  "name": "IISComputersComputerPartTypeE",
+  "className": "ComputerPartTypeE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-computers-computer-part-type",
+      "modelProjection": "ComputerPartTypeE"
+    }
+  ]
+}

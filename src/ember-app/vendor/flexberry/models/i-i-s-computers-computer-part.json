@@ -1,0 +1,107 @@
+﻿{
+  "name": "IISComputersComputerPart",
+  "modelName": "i-i-s-computers-computer-part",
+  "className": "ComputerPart",
+  "nameSpace": "IIS.Computers",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "name",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "serialNumber",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "sizeOrCapacity",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "computerPartType",
+      "relatedTo": "i-i-s-computers-computer-part-type",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "computer",
+      "relatedTo": "i-i-s-computers-computer",
+      "inverse": "parts"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ComputerPartE",
+      "modelName": "i-i-s-computers-computer-part",
+      "attrs": [
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "serialNumber",
+          "caption": "Serial number",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "sizeOrCapacity",
+          "caption": "Size or capacity",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Name",
+          "lookupValueField": "name",
+          "relationName": "ComputerPartType",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "name",
+              "caption": "Name",
+              "hidden": true,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "standard",
+          "caption": "Computer part type",
+          "name": "computerPartType",
+          "relatedTo": "i-i-s-computers-computer-part-type",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

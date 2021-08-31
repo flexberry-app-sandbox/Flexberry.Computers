@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Office",
+  "name": "IISComputersOfficeE",
+  "className": "OfficeE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-computers-office",
+      "modelProjection": "OfficeE"
+    }
+  ]
+}

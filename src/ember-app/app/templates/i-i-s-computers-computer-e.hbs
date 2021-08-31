@@ -1,0 +1,91 @@
+<h3 class="ui header">{{t "forms.i-i-s-computers-computer-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.name
+      class=(if (v-get validationObject "name" "isInvalid") "error")
+      label=(t "forms.i-i-s-computers-computer-e.name-caption")
+      data-test-i-i-s-computers-computer-e-name=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "name" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-computers-computer-e.office-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.office
+      class=(if (v-get validationObject "office" "isInvalid") "error")
+      displayAttributeName="address"
+      autocomplete=true
+      relationName="office"
+      projection="OfficeL"
+      title=(t "forms.i-i-s-computers-computer-e.office-caption")
+      readonly=readonly
+      componentName="officeLookup"
+      class=(if (v-get validationObject "office" "isInvalid") "error")
+      data-test-i-i-s-computers-computer-e-office=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "office" "message")}}
+  </div>
+
+  <div class="field">
+    <label>{{t "forms.i-i-s-computers-computer-e.owner-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.owner
+      class=(if (v-get validationObject "owner" "isInvalid") "error")
+      displayAttributeName="name"
+      autocomplete=true
+      relationName="owner"
+      projection="PersonL"
+      title=(t "forms.i-i-s-computers-computer-e.owner-caption")
+      readonly=readonly
+      componentName="ownerLookup"
+      class=(if (v-get validationObject "owner" "isInvalid") "error")
+      data-test-i-i-s-computers-computer-e-owner=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "owner" "message")}}
+  </div>
+
+  <div class="field">
+    <label>{{t "forms.i-i-s-computers-computer-e.parts-caption"}}</label>
+    {{flexberry-groupedit
+      componentName="partsGroupEdit"
+      mainModelProjection=modelProjection
+      modelProjection=modelProjection.attributes.parts
+      content=model.parts
+      readonly=readonly
+      orderable=false
+      class=(if (v-get validationObject "parts" "isInvalid") "error")
+      data-test-i-i-s-computers-computer-e-parts=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "parts" "message")}}
+  </div>
+</form>

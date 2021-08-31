@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-computers-office-e",
+  "editForm": "i-i-s-computers-office-e",
+  "external": false,
+  "caption": "Office",
+  "name": "IISComputersOfficeL",
+  "className": "OfficeL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-computers-office",
+      "modelProjection": "OfficeL"
+    }
+  ]
+}
