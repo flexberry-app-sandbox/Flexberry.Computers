@@ -28,13 +28,13 @@ export default Controller.extend({
             link: 'i-i-s-computers-office-l',
             caption: i18n.t('forms.application.sitemap.computers.i-i-s-computers-office-l.caption'),
             title: i18n.t('forms.application.sitemap.computers.i-i-s-computers-office-l.title'),
-            icon: 'calendar',
+            icon: 'phone',
             children: null
           }, {
             link: 'i-i-s-computers-person-l',
             caption: i18n.t('forms.application.sitemap.computers.i-i-s-computers-person-l.caption'),
             title: i18n.t('forms.application.sitemap.computers.i-i-s-computers-person-l.title'),
-            icon: 'folder open',
+            icon: 'edit',
             children: null
           }, {
             link: 'i-i-s-computers-computer-l',
@@ -46,7 +46,7 @@ export default Controller.extend({
             link: 'i-i-s-computers-computer-part-type-l',
             caption: i18n.t('forms.application.sitemap.computers.i-i-s-computers-computer-part-type-l.caption'),
             title: i18n.t('forms.application.sitemap.computers.i-i-s-computers-computer-part-type-l.title'),
-            icon: 'folder open',
+            icon: 'archive',
             children: null
           }]
         }
