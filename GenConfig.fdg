@@ -14,7 +14,7 @@
         "Build": false,
         "GitClone": false,
         "GitPush": false,
-        "GhPagesPush": false
+        "GhPagesPush": true
       },
       "ApacheCordova": {
         "CordovaProject": false,
@@ -35,7 +35,7 @@
     "Storage": {
       "Mssql": {
         "DiffSql": false,
-        "FullSql": true,
+        "FullSql": false,
         "Security": false,
         "AdminUser": false,
         "ConnectionString": null
@@ -54,7 +54,7 @@
       },
       "Oracle": {
         "DiffSql": false,
-        "FullSql": true,
+        "FullSql": false,
         "ConnectionString": null
       },
       "Access": {
